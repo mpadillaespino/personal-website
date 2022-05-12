@@ -480,17 +480,17 @@
             textoScore.innerText = score + "/20";
             audioMoneda.currentTime = 0;
             audioMoneda.play();
-            if (score == 6) {
+            if (score == 5) {
                 gameVel = 1.15;
                 contenedor.classList.add("manana");
             } else if (score == 10) {
-                gameVel = 1.25;
+                gameVel = 1.27;
                 contenedor.classList.add("mediodia");
             } else if (score == 15) {
-                gameVel = 1.3;
+                gameVel = 1.32;
                 contenedor.classList.add("tarde");
             } else if (score == 18) {
-                gameVel = 1.4;
+                gameVel = 1.42;
                 contenedor.classList.add("noche");
             }
             suelo.style.animationDuration = (3 / gameVel) + "s";
