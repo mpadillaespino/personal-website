@@ -282,11 +282,11 @@
         var gameVel = 1;
         var score = 0;
 
-        var tiempoHastaMoneda = 1.4;
-        var tiempoMonedaMin = 1.4;
-        var tiempoMonedaMax = 2.9;
+        var tiempoHastaMoneda = 1.2;
+        var tiempoMonedaMin = 1.2;
+        var tiempoMonedaMax = 2.5;
         var monedaMinY = 40;
-        var monedaMaxY = 230;
+        var monedaMaxY = 220;
 
         var parado = false;
         var saltando = false;
@@ -484,13 +484,13 @@
                 gameVel = 1.1;
                 contenedor.classList.add("manana");
             } else if (score == 10) {
-                gameVel = 1.4;
+                gameVel = 1.3;
                 contenedor.classList.add("mediodia");
             } else if (score == 14) {
-                gameVel = 1.7;
+                gameVel = 1.5;
                 contenedor.classList.add("tarde");
             } else if (score == 18) {
-                gameVel = 2;
+                gameVel = 1.8;
                 contenedor.classList.add("noche");
             }
             suelo.style.animationDuration = (3 / gameVel) + "s";
