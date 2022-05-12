@@ -481,16 +481,16 @@
             audioMoneda.currentTime = 0;
             audioMoneda.play();
             if (score == 4) {
-                gameVel = 1.2;
+                gameVel = 1.1;
                 contenedor.classList.add("manana");
             } else if (score == 10) {
-                gameVel = 1.6;
+                gameVel = 1.4;
                 contenedor.classList.add("mediodia");
             } else if (score == 14) {
-                gameVel = 1.9;
+                gameVel = 1.7;
                 contenedor.classList.add("tarde");
             } else if (score == 18) {
-                gameVel = 2.3;
+                gameVel = 2;
                 contenedor.classList.add("noche");
             }
             suelo.style.animationDuration = (3 / gameVel) + "s";
