@@ -237,7 +237,6 @@
     <div class="game-over">GAME OVER</div>
     <div class="mensaje-oculto">Mensaje oculto</div>
     <audio src="sound/moneda.mp3" class="audio-moneda"></audio>
-    <audio src="sound/salto.mp3" class="audio-salto"></audio>
     <audio src="sound/gameOver.mp3" class="audio-gameOver"></audio>
 
     <script>
@@ -313,7 +312,6 @@
         var gameOver;
         var mensajeOculto;
         var audioMoneda;
-        var audioSalto;
         var audioGameOver;
 
         function Start() {
@@ -324,7 +322,6 @@
             textoScore = document.querySelector(".score");
             dino = document.querySelector(".dino");
             audioMoneda = document.querySelector(".audio-moneda");
-            audioSalto = document.querySelector(".audio-salto");
             audioGameOver = document.querySelector(".audio-gameOver");
             document.addEventListener("keydown", HandleKeyDown);
             document.addEventListener("click", clickOutside, false);
@@ -361,8 +358,6 @@
                 saltando = true;
                 velY = impulso;
                 dino.classList.remove("dino-corriendo");
-                audioSalto.currentTime = 0;
-                audioSalto.play();
             }
         }
 
