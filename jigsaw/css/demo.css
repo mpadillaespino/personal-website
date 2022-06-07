@@ -13,8 +13,9 @@ label:hover {
 .center-content {
     display: flex;
     flex-flow: column;
-    position: fixed; left: 0; top: 0; right: 0; bottom: 0;
     touch-action:none;
+    place-content: center space-between;
+    min-height: 100vh;
 }
 
 .center-content > * {
@@ -41,6 +42,7 @@ input[type="number"] {
     flex-flow: column;
     place-content: center;
     width: 100%;
+    min-height: 100%;
     background: rgba(92,24,81,.9);
     padding: 20px;
     font-size: calc(.5vw + 16px);
