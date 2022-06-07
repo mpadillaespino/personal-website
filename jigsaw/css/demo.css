@@ -39,7 +39,6 @@ input[type="number"] {
     display: flex;
     flex-flow: column;
     place-content: center;
-    min-height: 100%;
     width: 100%;
     background: rgba(92,24,81,.9);
     padding: 20px;
